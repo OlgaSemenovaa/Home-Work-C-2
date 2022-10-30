@@ -6,12 +6,9 @@
 // 782 -> 8
 // 918 -> 1
 
-int num = new Random().Next(100, 1000);
-Console.WriteLine(num);
+Console.Write("Введи трёхзначное число: ");
 
-int FirstLastNumber (int number);
-{
-    int FirstLastNumber = num / 10;
-}
+int threeDigitNumber = Convert.ToInt32(Console.ReadLine());
+string stringNumber = Convert.ToString(threeDigitNumber);
 
-Console.WriteLine(FirstLastNumber(num)); 
+Console.WriteLine("вторая цифра этого числа -> "+stringNumber[1]);
